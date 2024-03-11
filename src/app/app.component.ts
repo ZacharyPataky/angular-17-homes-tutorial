@@ -1,14 +1,13 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
-  template: `
-    <h1>Default</h1>
-  `,
-  styleUrls: ['./app.component.css'],
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'default';
+  title = 'angular-17-homes-tutorial';
 }
